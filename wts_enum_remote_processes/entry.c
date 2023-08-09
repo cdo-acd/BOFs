@@ -147,7 +147,7 @@ void go(char *args, int len) {
         GetUserInfo(host, userSid, username);
         ADVAPI32$ConvertSidToStringSidA(userSid, &StringSid);
 
-        BeaconPrintf(CALLBACK_OUTPUT, "[+] Process = %s, PID = %d, Owner = %s", p[i].pProcessName, p[i].ProcessId, username);
+        BeaconPrintf(CALLBACK_OUTPUT, "[+] Process = %s, PID = %d, Owner = %s\n", p[i].pProcessName, p[i].ProcessId, username);
 
     }
 
